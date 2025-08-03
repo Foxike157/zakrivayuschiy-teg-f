@@ -9,3 +9,24 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+
+.main_contour{
+ fill:black;   
+}
+
+.body_main{
+    fill: rgba(256, 0, 0, 0);
+transition: fill .3s linear;
+}
+
+.core {
+    fill:  rgba(256, 0, 0, 0);
+    transition: fill .3s linear .03s;
+}
+
+.explosion {fill: var(--color-body-heart);
+    opacity: 0;}
+
+
+
+ /******************************************************************/   
