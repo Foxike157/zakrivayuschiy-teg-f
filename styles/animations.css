@@ -10,11 +10,11 @@
 
 */
 
-.main_contour{
+.contour{
  fill:black;   
 }
 
-.body_main{
+.main-body{
     fill: rgba(256, 0, 0, 0);
 transition: fill .3s linear;
 }
@@ -24,9 +24,33 @@ transition: fill .3s linear;
     transition: fill .3s linear .03s;
 }
 
-.explosion {fill: var(--color-body-heart);
-    opacity: 0;}
+.sparks {
+    fill: #ff0000;
+    opacity: 0;
+}
 
 
 
  /******************************************************************/   
+
+  @keyframes like-skale {
+    0% {
+      transform: scale(1);
+      transform-origin: 50% 50%;
+    }
+  
+    100% {
+      transform: scale(1.5);
+      transform-origin: 50% 50%;
+    }
+  }
+
+  @keyframes like-shine {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
