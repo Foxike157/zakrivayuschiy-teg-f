@@ -543,14 +543,14 @@
 
   </main>
   <footer>
-    <button type="button"  class="save_button" onclick="window['dialog-id'].showModal();" aria-controls="dialog-id" >
+    <button  type="button"  class="save_button" onclick="window['dialog-id'].showModal();" aria-controls="dialog-id" >
       <svg class="floppy_image" viewBox="0 0 21 21">
         <use href="./svg/floppy 12121.svg#floppy"></use>
       </svg>
       <span class="button__text">Сохранить на память</span>
     </button>
   </footer>
-  <dialog class="modal-window" id="dialog-id">
+  <dialog   class="modal-window" id="dialog-id" >
     <div class="content_modal_window">
       <div class="diskette_window">
         <svg class="modal_window_image" viewBox="0 0 20 20">
@@ -559,7 +559,7 @@
         <p class="modal_text">Вставьте дискету, чтобы продолжить</p>
       </div>
 <form method="dialog">
-          <button type="button" class="confirmation_button">
+          <button onclick="this.closest('dialog').close()" type="button" class="confirmation_button">
             <span class="button__text">ОК</span>
           </button>
         </form>
