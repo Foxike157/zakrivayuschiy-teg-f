@@ -13,26 +13,32 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-variation-settings: 'wgth' 400;
-  background-image: repeating-linear-gradient(to right, #d3d3d3 0 2px, rgba(0, 0, 0, 0) 2px 4px), repeating-linear-gradient(to bottom, #d3d3d3 0 2px, rgba(0, 0, 0, 0) 2px 4px), linear-gradient(to bottom, #e7e7e7 .01%, #1a1a1a);
-  ;
+  font-variation-settings: "wgth" 400;
+  background-image: repeating-linear-gradient(
+      to right,
+      #d3d3d3 0 2px,
+      rgba(0, 0, 0, 0) 2px 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #d3d3d3 0 2px,
+      rgba(0, 0, 0, 0) 2px 4px
+    ),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
   background-attachment: fixed;
   object-fit: cover;
   font-family: var(--font-main);
   color: #000;
-
-
 }
 
 .header {
-  padding: 0;
   margin: 0 auto 98px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   border: 2px solid #000;
-  width: min(700px, 100%);
+  width: min(700px, 100%);  
   margin-block-start: 100px;
   background-color: #fff;
   font-family: var(--font-accent);
@@ -41,17 +47,13 @@
   align-items: center;
   font-family: var(--font-accent);
   font-weight: 400;
-
 }
-
 
 .decorate_title {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   line-height: 100%;
   margin-bottom: 20px;
-
 }
-
 
 .heading_title {
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
@@ -79,9 +81,6 @@
   border: #000 2px solid;
 }
 
-
-
-
 .heading {
   font-weight: 715;
   font-size: 18px;
@@ -90,10 +89,6 @@
   margin: 6px 0 6px 10px;
   white-space: nowrap;
 }
-
-
-
-
 
 /*стили карточки с водяным знаком */
 .water_sign {
@@ -116,14 +111,11 @@
   -webkit-text-stroke: 1px white;
 }
 
-
-
 .text_card_item {
   font-weight: 410;
   font-size: 18px;
   line-height: 21px;
   margin: 21px 25px 27px 25px;
-
 }
 
 /* Здесь вы напишете основную часть стилей страницы.
@@ -138,14 +130,11 @@
 
 */
 
-
-
 .button_card {
   display: flex;
   align-items: center;
   justify-content: end;
   margin: 0 25px 25px 0;
-
 }
 
 .card__icon-button {
@@ -157,10 +146,8 @@
   border: 2px solid transparent;
   align-items: center;
   justify-content: center;
-  transition: border .3s ease;
-
+  transition: border 0.3s ease;
 }
-
 
 .like-icon {
   height: 36px;
@@ -171,11 +158,10 @@
   padding: 0;
 }
 
-
 /*анимация */
 .card__icon-button:hover .main-body {
   fill: #000;
-  transition: fill .3s linear 0.05s;
+  transition: fill 0.3s linear 0.05s;
 }
 
 .card__icon-button:hover .core {
@@ -183,49 +169,42 @@
   transition: fill 0.3s linear;
 }
 
-
 .is-liked .heart {
-  animation: like-skale .3s ease-in .1s alternate;
+  animation: like-skale 0.3s ease-in 0.1s alternate;
 }
 
 .like-icon.is-liked .contour {
   fill: #ff0000;
-  transition: fill .3s linear 0.06s;
+  transition: fill 0.3s linear 0.06s;
 }
 
 .like-icon.is-liked .main-body {
   fill: #ff0000;
-  transition: fill .3s linear 0.05s;
+  transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon.is-liked .core {
   fill: #ff0000;
-  transition: fill .3s linear;
+  transition: fill 0.3s linear;
 }
 
 .is-liked .sparks {
-  animation: like-shine .3s ease-in .3s alternate;
+  animation: like-shine 0.3s ease-in 0.3s alternate;
 }
 
-
-.image_in_card {
+.image_in_c ard {
   width: 100%;
 }
 
-
 .card__icon-button:active .main-body {
   fill: #ff0000;
-  transition: fill .3s linear 0.05s;
+  transition: fill 0.3s linear 0.05s;
 }
 
 .card__icon-button:active .core {
   fill: #ff0000;
-  transition: fill .3s linear;
+  transition: fill 0.3s linear;
 }
-
-
-
-
 
 /*кнопка лайк*/
 
@@ -242,7 +221,7 @@
   border: 2px solid black;
   background-color: transparent;
   line-height: 90%;
-  transition: all 0.5s;
+  transition:  0.5s;
   font-size: 14px;
 }
 
@@ -251,9 +230,6 @@
   color: #fff;
   z-index: 1;
 }
-
-
-
 
 .confirmation_button:hover:before,
 .card__like-button:hover:before,
@@ -272,10 +248,7 @@
   block-size: 100%;
   background-color: #000;
   transition: 0.5s ease-in-out;
-
 }
-
-
 
 /*footer кнопка */
 
@@ -293,11 +266,8 @@
   font-size: 14px;
   line-height: 90%;
   background-color: #fff;
-  transition: all 0.5s;
+  transition:  0.5s;
 }
-
-
-
 
 .floppy_image {
   width: 21px;
@@ -307,12 +277,6 @@
   mix-blend-mode: difference;
   z-index: 1;
 }
-
-
-
-
-
-
 
 /*всплыыающие окно*/
 .modal-window {
@@ -324,9 +288,6 @@
   padding: 32px 42px 32px;
   border: 2px solid #000;
 }
-
-
-
 
 .content_modal_window {
   display: flex;
@@ -347,8 +308,6 @@
   width: 90px;
   height: 40px;
 }
-
-
 
 .modal_text {
   display: block;
@@ -373,9 +332,8 @@
   border: 2px solid black;
   background-color: transparent;
   line-height: 90%;
-  transition: all 0.5s;
+  transition:  0.5s;
   font-size: 14px;
-
 }
 
 dialog:-internal-dialog-in-top-layer::backdrop {
@@ -384,11 +342,7 @@ dialog:-internal-dialog-in-top-layer::backdrop {
   background: rgba(0, 0, 0, 0.75);
 }
 
-
-
-
-
-@media (max-width:375px) {
+@media (max-width: 375px) {
   .page {
     min-height: 100vh;
   }
@@ -398,7 +352,6 @@ dialog:-internal-dialog-in-top-layer::backdrop {
     padding: 32vw 0 31.733vw 0;
   }
 
-
   .heading {
     margin-top: 10px;
     white-space: nowrap;
@@ -407,10 +360,7 @@ dialog:-internal-dialog-in-top-layer::backdrop {
   .image_in_card {
     min-height: 371px;
   }
-
 }
-
-
 
 @media (max-width: 400px) {
   .save_button {
@@ -420,25 +370,19 @@ dialog:-internal-dialog-in-top-layer::backdrop {
     padding: 15px 0;
     justify-content: space-between;
     margin-top: 40px;
-
   }
 
   .floppy_image {
     width: 28px;
     height: 28px;
     margin-right: 0;
-
   }
-
 
   .text_card_item {
     margin-top: 19px;
-
   }
 
   .water_sign::before {
     inset-inline-end: 11px;
   }
-
-
 }
