@@ -14,16 +14,12 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-variation-settings: "wgth" 400;
-  background-image: repeating-linear-gradient(
-      to right,
+  background-image: repeating-linear-gradient(to right,
       #d3d3d3 0 2px,
-      rgba(0, 0, 0, 0) 2px 4px
-    ),
-    repeating-linear-gradient(
-      to bottom,
+      rgba(0, 0, 0, 0) 2px 4px),
+    repeating-linear-gradient(to bottom,
       #d3d3d3 0 2px,
-      rgba(0, 0, 0, 0) 2px 4px
-    ),
+      rgba(0, 0, 0, 0) 2px 4px),
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
   background-attachment: fixed;
   object-fit: cover;
@@ -38,13 +34,12 @@
   justify-content: center;
   align-content: center;
   border: 2px solid #000;
-  width: min(700px, 100%);  
+  width: min(700px, 100%);
   background-color: #fff;
   font-family: var(--font-accent);
   color: #000;
   padding: 8.819vw 0 9.028vw 0;
   align-items: center;
-  font-family: var(--font-accent);
   font-weight: 400;
 }
 
@@ -87,6 +82,7 @@
   vertical-align: middle;
   margin: 6px 0 6px 10px;
   white-space: nowrap;
+  font-variation-settings: 'wght' 700;
 }
 
 /*стили карточки с водяным знаком */
@@ -102,7 +98,7 @@
   block-size: 14px;
   inset-inline-end: 25px;
   inset-block-start: 25px;
-  font-family: var(--font-accent);  
+  font-family: var(--font-accent);
   font-size: 14px;
   opacity: 50%;
   mix-blend-mode: hard-light;
@@ -110,14 +106,10 @@
   -webkit-text-stroke: 1px white;
 }
 
-
 @supports ((-webkit-text-stroke: 1px #fff) or (text-stroke: 1px #fff)) {
-
-   -webkit-text-stroke: 1px #fff;
-    text-stroke: 1px #fff;
-  
+  -webkit-text-stroke: 1px #fff;
+  text-stroke: 1px #fff;
 }
-
 
 .text_card_item {
   font-weight: 410;
@@ -229,7 +221,7 @@
   border: 2px solid black;
   background-color: transparent;
   line-height: 90%;
-  transition:  0.5s;
+  transition: 0.5s;
   font-size: 14px;
 }
 
@@ -274,7 +266,7 @@
   font-size: 14px;
   line-height: 90%;
   background-color: #fff;
-  transition:  0.5s;
+  transition: 0.5s;
 }
 
 .floppy_image {
@@ -340,7 +332,7 @@
   border: 2px solid black;
   background-color: transparent;
   line-height: 90%;
-  transition:  0.5s;
+  transition: 0.5s;
   font-size: 14px;
 }
 
@@ -349,7 +341,6 @@ dialog:-internal-dialog-in-top-layer::backdrop {
   inset: 0px;
   background: rgba(0, 0, 0, 0.75);
 }
-
 
 .filter-85 {
   filter: saturate(85%);
@@ -360,32 +351,28 @@ dialog:-internal-dialog-in-top-layer::backdrop {
 }
 
 .filter-65 {
-  filter:saturate(65%);
+  filter: saturate(65%);
 }
 
 .filter-55 {
-  filter:saturate(55%);
+  filter: saturate(55%);
 }
 
 .filter-45 {
-  filter:saturate(45%);
+  filter: saturate(45%);
 }
 
 .filter-35: {
-  filter:saturate(35%);
+  filter: saturate(35%);
 }
 
-
 .filter-25 {
-  filter:saturate(25%);
+  filter: saturate(25%);
 }
 
 .filter-15 {
-filter:saturate(15%)
+  filter: saturate(15%);
 }
-
-
-
 
 @media (max-width: 375px) {
   .page {
