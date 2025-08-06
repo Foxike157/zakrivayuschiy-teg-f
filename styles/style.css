@@ -32,14 +32,13 @@
 }
 
 .header {
-  margin: 0 auto 98px auto;
+  margin: 100px auto 98px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   border: 2px solid #000;
   width: min(700px, 100%);  
-  margin-block-start: 100px;
   background-color: #fff;
   font-family: var(--font-accent);
   color: #000;
@@ -103,13 +102,22 @@
   block-size: 14px;
   inset-inline-end: 25px;
   inset-block-start: 25px;
-  font-family: var(--font-accent);
+  font-family: var(--font-accent);  
   font-size: 14px;
   opacity: 50%;
   mix-blend-mode: hard-light;
   color: #000;
   -webkit-text-stroke: 1px white;
 }
+
+
+@supports ((-webkit-text-stroke: 1px #fff) or (text-stroke: 1px #fff)) {
+
+   -webkit-text-stroke: 1px #fff;
+    text-stroke: 1px #fff;
+  
+}
+
 
 .text_card_item {
   font-weight: 410;
@@ -341,6 +349,43 @@ dialog:-internal-dialog-in-top-layer::backdrop {
   inset: 0px;
   background: rgba(0, 0, 0, 0.75);
 }
+
+
+.filter-85 {
+  filter: saturate(85%);
+}
+
+.filter-75 {
+  filter: saturate(75%);
+}
+
+.filter-65 {
+  filter:saturate(65%);
+}
+
+.filter-55 {
+  filter:saturate(55%);
+}
+
+.filter-45 {
+  filter:saturate(45%);
+}
+
+.filter-35: {
+  filter:saturate(35%);
+}
+
+
+.filter-25 {
+  filter:saturate(25%);
+}
+
+.filter-15 {
+filter:saturate(15%)
+}
+
+
+
 
 @media (max-width: 375px) {
   .page {
