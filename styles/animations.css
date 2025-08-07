@@ -11,7 +11,7 @@
 */
 
 .contour {
-  fill: black;
+  fill: var(--accent-color);
 }
 
 .main-body {
@@ -25,9 +25,60 @@
 }
 
 .sparks {
-  fill: #ff0000;
+  fill: var(--color-body-heart);
   opacity: 0;
 }
+
+
+
+.card__icon-button:hover .main-body {
+  fill: var(--accent-color);
+  transition: fill 0.3s linear 0.05s;
+}
+
+.card__icon-button:hover .core {
+  fill: var(--accent-color);
+  transition: fill 0.3s linear;
+}
+
+.is-liked .heart {
+  animation: like-skale 0.3s ease-in 0.1s alternate;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--color-body-heart);
+  transition: fill 0.3s linear 0.06s;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--color-body-heart);
+  transition: fill 0.3s linear 0.05s;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--color-body-heart);
+  transition: fill 0.3s linear;
+}
+
+.is-liked .sparks {
+  animation: like-shine 0.3s ease-in 0.3s alternate;
+}
+
+
+.card__icon-button:active .main-body {
+  fill: var(--color-body-heart);
+  transition: fill 0.3s linear 0.05s;
+}
+
+.card__icon-button:active .core {
+  fill: var(--color-body-heart);
+  transition: fill 0.3s linear;
+}
+
+
+
+
+
 
 /******************************************************************/
 
