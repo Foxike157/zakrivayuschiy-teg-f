@@ -147,12 +147,11 @@
 }
 
 .card__icon-button:focus-visible {
-  outline: 2px var(--accent-color) solid;
-  transition: border 0.3s ease;
+  outline: none;
 }
 
 .card__icon-button:focus {
-  outline: none;
+  outline: 2px var(--accent-color) solid;
 }
 
 .like-icon {
@@ -181,13 +180,13 @@
   font-size: 14px;
   transition: 0.5s;
   line-height: 90%;
+  background-color: var(--background-color);
 }
 
 .card__like-button {
   width: 130px;
   height: 38px;
   padding: 9px 17px;
-  background-color: transparent;
 }
 
 .button__text {
@@ -226,7 +225,6 @@
   width: 340px;
   height: 55px;
   line-height: 90%;
-  background-color: var(--background-color);
 }
 
 .floppy_image {
