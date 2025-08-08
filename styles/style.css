@@ -146,6 +146,15 @@
   transition: border 0.3s ease;
 }
 
+.card__icon-button:focus-visible {
+  outline: 2px var(--accent-color) solid;
+  transition: border 0.3s ease;
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
 .like-icon {
   height: 36px;
   width: 39px;
@@ -161,21 +170,24 @@
 
 /*кнопка лайк*/
 
-.card__like-button {
+.button_press {
   cursor: pointer;
   position: relative;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-accent);
+  border: 2px solid var(--accent-color);
+  font-size: 14px;
+  transition: 0.5s;
+  line-height: 90%;
+}
+
+.card__like-button {
   width: 130px;
   height: 38px;
   padding: 9px 17px;
-  justify-content: center;
-  align-items: center;
-  font-family: var(--font-accent);
-  border: 2px solid var(--accent-color);
   background-color: transparent;
-  line-height: 90%;
-  transition: 0.5s;
-  font-size: 14px;
 }
 
 .button__text {
@@ -187,20 +199,16 @@
   text-transform: uppercase;
 }
 
-.modal-window__button:focus,
-.card__like-button:focus,
-.save_button:focus {
+.button_press:focus {
   outline: none;
   box-shadow: 2px 2px 0px 0px var(--accent-color);
 }
 
-.card__like-button:hover:before,
-.save_button:hover:before {
+.button_press:hover:before {
   width: 100%;
 }
 
-.card__like-button:before,
-.save_button:before {
+.button_press:before {
   content: "";
   position: absolute;
   top: 0;
@@ -214,20 +222,11 @@
 /*footer кнопка */
 
 .save_button {
-  cursor: pointer;
-  position: relative;
-  display: flex;
   margin: 48px auto 100px auto;
   width: 340px;
   height: 55px;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-accent);
-  border: 2px solid var(--accent-color);
-  font-size: 14px;
   line-height: 90%;
   background-color: var(--background-color);
-  transition: 0.5s;
 }
 
 .floppy_image {
@@ -324,6 +323,7 @@ dialog:-internal-dialog-in-top-layer::backdrop {
 
 @media (max-width: 400px) {
   .save_button {
+    display: flex;
     flex-direction: column;
     width: 306px;
     height: 80px;

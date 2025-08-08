@@ -29,8 +29,6 @@
   opacity: 0;
 }
 
-
-
 .card__icon-button:hover .main-body {
   fill: var(--accent-color);
   transition: fill 0.3s linear 0.05s;
@@ -64,7 +62,6 @@
   animation: like-shine 0.3s ease-in 0.3s alternate;
 }
 
-
 .card__icon-button:active .main-body {
   fill: var(--color-body-heart);
   transition: fill 0.3s linear 0.05s;
@@ -74,11 +71,6 @@
   fill: var(--color-body-heart);
   transition: fill 0.3s linear;
 }
-
-
-
-
-
 
 /******************************************************************/
 

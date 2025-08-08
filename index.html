@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Закрывающий тег</title>
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/animations.css" />
+    <link rel="stylesheet" href="./fonts/fonts.css" >
+    <link rel="stylesheet" href="./styles/variables.css" >
+    <link rel="stylesheet" href="./styles/globals.css" >
+    <link rel="stylesheet" href="./styles/style.css" >
+    <link rel="stylesheet" href="./styles/animations.css">
 
-    <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
-    <link rel="icon" href="./images/favicon.ico" sizes="any" />
-    <link rel="apple-touch-icon" href="./images/favicon.png" />
+    <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="./images/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="./images/favicon.png">
   </head>
 
   <body class="page">
@@ -32,7 +32,7 @@
               loading="lazy"
               src="./images/1.png"
               alt="фургон первая картинка"
-            />
+            >
           </div>
 
           <div class="text_card">
@@ -83,7 +83,7 @@
             </svg>
           </button>
 
-          <button type="button" class="card__like-button">
+          <button type="button" class="card__like-button button_press">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -100,7 +100,7 @@
               loading="lazy"
               src="./images/2.png"
               alt="фургон вторая картинка"
-            />
+            >
           </div>
 
           <div class="text_card">
@@ -153,7 +153,7 @@
             </svg>
           </button>
 
-          <button type="button" class="card__like-button">
+          <button type="button" class="card__like-button button_press">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -170,7 +170,7 @@
               loading="lazy"
               src="./images/6.png"
               alt="фургон пятая картинка"
-            />
+            >
           </div>
 
           <div class="text_card">
@@ -221,7 +221,7 @@
             </svg>
           </button>
 
-          <button type="button" class="card__like-button">
+          <button type="button" class="card__like-button button_press">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -238,7 +238,7 @@
               loading="lazy"
               src="./images/4.png"
               alt="фургон четвёртая картинка"
-            />
+            >
           </div>
 
           <div class="text_card">
@@ -291,7 +291,7 @@
             </svg>
           </button>
 
-          <button type="button" class="card__like-button">
+          <button type="button" class="card__like-button button_press">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -308,7 +308,7 @@
               loading="lazy"
               src="./images/5.png"
               alt="фургон пятая картинка"
-            />
+            >
           </div>
 
           <div class="text_card">
@@ -362,7 +362,7 @@
             </svg>
           </button>
 
-          <button type="button" class="card__like-button">
+          <button type="button" class="card__like-button button_press">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -379,7 +379,7 @@
               loading="lazy"
               src="./images/3.png"
               alt="фургон третья картинка"
-            />
+            >
           </div>
 
           <div class="text_card">
@@ -430,7 +430,7 @@
             </svg>
           </button>
 
-          <button type="button" class="card__like-button">
+          <button type="button" class="card__like-button button_press">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -446,7 +446,7 @@
               loading="lazy"
               src="./images/7.png"
               alt="фургон пятая картинка"
-            />
+            >
           </div>
 
           <div class="text_card">
@@ -499,7 +499,7 @@
             </svg>
           </button>
 
-          <button type="button" class="card__like-button">
+          <button type="button" class="card__like-button button_press">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -516,7 +516,7 @@
               loading="lazy"
               src="./images/8.png"
               alt="фургон пятая картинка"
-            />
+            >
           </div>
 
           <div class="text_card">
@@ -571,25 +571,24 @@
             </svg>
           </button>
 
-          <button type="button" class="card__like-button">
+          <button type="button" class="card__like-button button_press">
             <span class="button__text">Like</span>
           </button>
         </div>
       </div>
+
+      <button
+        type="button"
+        class="save_button button_press"
+        onclick="window['dialog-id'].showModal();"
+        aria-controls="dialog-id"
+      >
+        <svg class="floppy_image" viewBox="0 0 21 21">
+          <use href="./svg/floppy 12121.svg#floppy"></use>
+        </svg>
+        <span class="button__text">Сохранить на память</span>
+      </button>
     </main>
-
-    <button
-      type="button"
-      class="save_button"
-      onclick="window['dialog-id'].showModal();"
-      aria-controls="dialog-id"
-    >
-      <svg class="floppy_image" viewBox="0 0 21 21">
-        <use href="./svg/floppy 12121.svg#floppy"></use>
-      </svg>
-      <span class="button__text">Сохранить на память</span>
-    </button>
-
     <dialog class="modal-window" id="dialog-id">
       <div class="content_modal_window">
         <div class="diskette_window">
@@ -602,7 +601,7 @@
           <button
             onclick="this.closest('dialog').close()"
             type="button"
-            class="confirmation_button save_button"
+            class="confirmation_button button_press"
           >
             <span class="button__text confirmation">ок</span>
           </button>
