@@ -148,10 +148,12 @@
 
 .card__icon-button:focus-visible {
   outline: none;
+      transition: outline 0.3s ease;
 }
 
 .card__icon-button:focus {
   outline: 2px var(--accent-color) solid;
+    transition: outline 0.3s ease;
 }
 
 .like-icon {
